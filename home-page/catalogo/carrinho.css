@@ -40,10 +40,17 @@ header{
     margin-bottom: 3vh;
 }
 
+main ul{
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 main p{
     font-weight: bold;
     color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, 
+    sans-serif;
+    margin-top: 1vh;
 }
 main button{
 border: none;
