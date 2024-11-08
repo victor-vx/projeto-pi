@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/5073/5073650.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Carrinho</title>
+    <link rel="stylesheet" href="carrinho.css">
+    <script>
+        function exibirCarrinho() {
+            const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+            const listaCarrinho = document.getElementById("lista-carrinho");
+            let total = 0;
+
+            listaCarrinho.innerHTML = "";
+
+            carrinho.forEach(produto => {
+                const item = document.createElement("li");
+                item.innerText = `${produto.nome} - R$ ${produto.preco.toFixed(2)}`;
+                listaCarrinho.appendChild(item);
+                total += produto.preco;
+            });
+
+            document.getElementById("total").innerText = `Total: R$ ${total.toFixed(2)}`;
+        }
+
+        function limparCarrinho() {
+            localStorage.removeItem("carrinho");
+            exibirCarrinho();
+        }
+
+        window.onload = exibirCarrinho;
+    </script>
+</head>
+
+<body>
+    <div class="nav-carrinho">
+        <header>
+            <h1>Seu Carrinho</h1>
+            <a href="catalogo.html">Voltar ao Catálogo</a>
+        </header>
+    
+        <main>
+            <ul id="lista-carrinho"></ul>
+            <p id="total"></p>
+            <button onclick="limparCarrinho()">Limpar Carrinho</button>
+        </main>
+    </div>
+    
+</body>
+</html>

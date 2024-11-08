@@ -7,43 +7,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Produtos</title>
     <link rel="stylesheet" href="catalogo.css">
+    <script>
+
+        let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+        function adicionarAoCarrinho(id, nome, preco) {
+            const produto = { id, nome, preco };
+            carrinho.push(produto);
+            localStorage.setItem("carrinho", JSON.stringify(carrinho));
+            atualizarContadorCarrinho();
+        }
+
+        function atualizarContadorCarrinho() {
+            document.getElementById("contador-carrinho").innerText = carrinho.length;
+        }
+
+        window.onload = atualizarContadorCarrinho;
+    </script>
 </head>
 
 <body>
     <header>
         <h1>Catálogo de Produtos</h1>
-        <a href="">Ver Carrinho</a>
+        <a href="carrinho.html">Ver Carrinho</a>
     </header>
 
     <main class="catalogo">
         <div class="produto">
-            <img src="https://cdn.awsli.com.br/600x450/968/968066/produto/36982274/creatina-max-titanium-300g-wokp9u5c7m.png"
+            <img style="width: 83%;"
+                src="https://cdn.awsli.com.br/600x450/968/968066/produto/36982274/creatina-max-titanium-300g-wokp9u5c7m.png"
                 alt="Creatina Max 300g">
             <h2>Creatina Max 300g</h2>
-            <p class="descricao-produto">Max Suplementos</p>
             <p class="preco">R$ 73,00</p>
-            <a href="" class="carrinho">Adcionar ao Carrinho</a>
+            <button onclick="adicionarAoCarrinho(1, 'Creatina Max 300g', 73)">Adicionar ao Carrinho</button>
+        </div>
         </div>
 
         <div class="produto">
             <img src="https://www.jauserve.com.br/dw/image/v2/BFJL_PRD/on/demandware.static/-/Sites-jauserve-master/default/dw9fe43cef/7898944774254.png?sw=1800"
                 alt="Whey Protein Max s:Chocolate 1kg">
             <h2>Whey Protein Max s:Chocolate 1kg</h2>
-            <p class="descricao-produto">Max Suplementos</p>
             <p class="preco">R$ 120,00</p>
-            <a href="" class="carrinho">Adcionar ao Carrinho</a>
+            <button onclick="adicionarAoCarrinho(2, 'Whey Protein Max s:Chocolate 1kg', 120)">Adicionar ao
+                Carrinho</button>
         </div>
 
         <div class="produto">
             <img src="https://www.jauserve.com.br/dw/image/v2/BFJL_PRD/on/demandware.static/-/Sites-jauserve-master/default/dw04c79d4b/7899941201804.png?sw=1800"
                 alt="Whey Protein Max s:Cookies|Creme 1kg">
             <h2>Whey Protein Max s:Cookies 1kg</h2>
-            <p class="descricao-produto">Max Suplementos</p>
             <p class="preco">R$ 127,60</p>
-            <a href="" class="carrinho">Adcionar ao Carrinho</a>
+            <button onclick="adicionarAoCarrinho(3, 'Whey Protein Max s:Cookies 1kg', 127.60)">Adicionar ao
+                Carrinho</button>
         </div>
 
-    </main>
+        <div class="produto">
+            <img src="https://acdn.mitiendanube.com/stores/002/218/616/products/crea1-abd8ff086c388782e017183634041853-1024-1024.png"
+                alt="Whey Protein Max s:Chocolate 1kg">
+            <h2>Creatina Dark Lab 300g</h2>
+            <p class="preco">R$ 57,00</p>
+            <button onclick="adicionarAoCarrinho(4, 'Creatina Dark Lab 300g', 57)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="produto">
+            <img src="https://acdn.mitiendanube.com/stores/002/218/616/products/100-whey-900g-d5d55ba923699200ef17193468054520-480-0.png"
+                alt="Whey Protein Dark Lab 900g">
+            <h2>Whey Protein Dark Lab 900g</h2>
+            <p class="preco">R$ 99,95</p>
+            <button onclick="adicionarAoCarrinho(5, 'Whey Protein Dark Lab 900g', 99.95)">Adicionar ao Carrinho</button>
+        </div>
+
+        <main class="catalogo">
+            <div class="produto">
+                <img style="width: 82%;"
+                    src="https://www.gsuplementos.com.br/upload/produto/layout/1500/haze-hardcore-pre-workout-growth-v3.webp"
+                    alt="Pré Treino Growth">
+                <h2>Pré Treino Growth</h2>
+                <p class="preco">R$ 88,00</p>
+                <button onclick="adicionarAoCarrinho(6, 'Pré Treino Growth', 88)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img style="width: 100%;"
+                    src="https://lojamaxtitanium.vtexassets.com/arquivos/ids/155851/Horus_FrutasVermelhas_300g.png?v=637898128760000000"
+                    alt="Pré Treino Max s:Frutas Vermelhas">
+                <h2>Pré Treino Max s:Frutas Vermelhas</h2>
+                <p class="preco">R$ 95,00</p>
+                <button onclick="adicionarAoCarrinho(7, 'Pré Treino Max s:Frutas Vermelhas', 95)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img style="width: 100%;"
+                    src="https://images.tcdn.com.br/img/img_prod/1017799/horus_300g_max_titanium_65_1_8b70aeac8f3a273a9ad44e29693b04a6.png"
+                    alt="Pré Treino Max s:Limão Yuzu">
+                <h2>Pré Treino Max s:Limão Yuzu</h2>
+                <p class="preco">R$ 76,60</p>
+                <button onclick="adicionarAoCarrinho(8, 'Pré Treino Max s:Limão Yuzu', 76.60)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img style="width: 67.5%;"
+                    src="https://www.gsuplementos.com.br/upload/produto/layout/1069/insanity-300g-growth-supplements-v4.webp"
+                    alt="Pré Treino Insanity Growth s:Limão 300g">
+                <h2>Pré Treino Insanity Growth s:Limão 300g</h2>
+                <p class="preco">R$ 99,00</p>
+                <button onclick="adicionarAoCarrinho(9, 'Pré Treino Insanity Growth s:Limão 300g', 99)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto">
+                <img style="width: 100%;"
+                    src="https://acdn.mitiendanube.com/stores/002/218/616/products/100-whey-900g-d5d55ba923699200ef17193468054520-480-0.png"
+                    alt="Whey Protein Dark Lab 900g">
+                <h2>Whey Protein Dark Lab 900g</h2>
+                <p class="preco">R$ 105,95</p>
+                <button onclick="adicionarAoCarrinho(10, 'Whey Protein Dark Lab 900g', 105.95)">Adicionar ao Carrinho</button>
+            </div>
+
+
+
+        </main>
 </body>
 
 </html>
