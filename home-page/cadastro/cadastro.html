@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="https://cdn-icons-png.flaticon.com/512/5073/5073650.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+    	*{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url(https://forbes.com.br/wp-content/uploads/2024/08/Life_A-mensalidade-em-uma-academia-pode-chegar-a-R-3-mil.jpg);
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .nav-cad{
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            background-color: rgba(0, 0, 0, 0.362);
+            padding: 40px;
+            border-radius: 10px;
+        }
+        .nav-cad img{
+            width: 150px;
+            margin-left: 8.2vh;
+        }
+        .nav-cad form{
+            display: flex;
+            flex-direction: column;
+            gap: 4vh;
+        }
+        .nav-cad form input{
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            background-color: white;
+            color: black;
+            font-size: 15px;
+            width: 300px;
+        }
+
+        .nav-cad button{
+            padding: 10px;
+            border-radius: 5vh;
+            background-color: white;
+            border: none;
+            color: black;
+            font-size: 17px;
+        }
+        .nav-cad button:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        .nav-cad ::placeholder{
+            color: black;
+            font-size: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="nav-cad">
+        <form>
+            <img src="https://cdn-icons-png.flaticon.com/512/5073/5073650.png">
+            <input type="text" placeholder="Usuário">
+            <input type="email" placeholder="E-mail">
+            <input type="password" placeholder="Senha">
+            <input type="password" placeholder="Confirmar Senha">
+            <button type="submit">Concluir Cadastro</button>
+        </form>
+    </div>
+</body>
+</html>
