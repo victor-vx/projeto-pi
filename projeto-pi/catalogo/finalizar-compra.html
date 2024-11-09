@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/5073/5073650.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+    <link rel="stylesheet" href="catalogo.css">
+    <script>
+
+        function exibirResumoCarrinho() {
+            const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+            const resumo = document.getElementById("resumo-carrinho");
+            let total = 0;
+
+            resumo.innerHTML = "";
+            carrinho.forEach(produto => {
+                const subtotal = produto.preco * produto.quantidade;
+                const item = document.createElement("li");
+                item.innerText = `${produto.nome} - Quantidade: ${produto.quantidade} - Subtotal: R$ ${subtotal.toFixed(2)}`;
+                resumo.appendChild(item);
+                total += subtotal;
+            });
+
+            const totalElement = document.getElementById("total");
+            totalElement.innerText = `Total: R$ ${total.toFixed(2)}`;
+
+            document.getElementById("valor-pix").innerText = `R$ ${total.toFixed(2)}`;
+        }
+
+        function escolherPagamento(metodo) {
+            const detalhesPix = document.getElementById("detalhes-pix");
+            const detalhesBoleto = document.getElementById("detalhes-boleto");
+
+            if (metodo === "pix") {
+                detalhesPix.style.display = "block";
+                detalhesBoleto.style.display = "none";
+            } else if (metodo === "boleto") {
+                detalhesPix.style.display = "none";
+                detalhesBoleto.style.display = "block";
+            }
+        }
+
+        window.onload = exibirResumoCarrinho;
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Finalizar Compra</h1>
+        <a href="index.html">Voltar ao Catálogo</a>
+    </header>
+
+    <main>
+        <h2>Resumo da Compra</h2>
+        <ul id="resumo-carrinho"></ul>
+        <p id="total"></p>
+
+        <h2>Escolha o Método de Pagamento</h2>
+        <button onclick="escolherPagamento('pix')">Pagar com Pix</button>
+        <button onclick="escolherPagamento('boleto')">Pagar com Boleto</button>
+
+        <div id="detalhes-pix" style="display: none;">
+            <h3>Pagamento via Pix</h3>
+            <p>Escaneie o QR Code abaixo com seu aplicativo bancário:</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Link_pra_pagina_principal_da_Wikipedia-PT_em_codigo_QR_b.svg/1200px-Link_pra_pagina_principal_da_Wikipedia-PT_em_codigo_QR_b.svg.png" alt="QR Code Pix" style="width: 100px;">
+            <p>Total a pagar: <span id="valor-pix"></span></p>
+        </div>
+
+        <div id="detalhes-boleto" style="display: none;">
+            <h3>Pagamento via Boleto</h3>
+            <p>Geramos um boleto para você realizar o pagamento.</p>
+            <button onclick="gerarBoleto()">Gerar Boleto</button>
+        </div>
+    </main>
+
+    <script>
+        function gerarBoleto() {
+            alert("Boleto gerado com sucesso! Código de barras: 1234 5678 9012 3456 7890");
+        }
+    </script>
+</body>
+</html>

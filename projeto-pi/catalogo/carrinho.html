@@ -36,16 +36,25 @@
 <body>
     <div class="nav-carrinho">
         <header>
-            <h1>Seu Carrinho</h1>
-            <a href="catalogo.html">Voltar ao Catálogo</a>
+           <img style="width: 100px;" src="https://cdn-icons-png.flaticon.com/512/5087/5087784.png">
+           <div class="volta-catalogo">
+            <a href="catalogo.html">Voltar ao Catálogo</a> 
+           </div>
         </header>
     
         <main>
             <ul id="lista-carrinho"></ul>
             <p id="total"></p>
             <button onclick="limparCarrinho()">Limpar Carrinho</button>
+            <button onclick="finalizarCompra()">Finalizar Compra</button>
         </main>
     </div>
     
+    <script>
+        function finalizarCompra() {
+            window.location.href = "finalizar-compra.html";
+        }
+    </script>
+
 </body>
 </html>

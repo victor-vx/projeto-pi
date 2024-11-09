@@ -11,7 +11,7 @@ body{
     margin-top: 25vh;
 }
 .nav-carrinho{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.349);
     width: 300px;
     padding: 70px;
     border-radius: 15px;
@@ -23,7 +23,10 @@ header h1{
     font-size: 45px;
     margin-bottom: 2vh;
 }
-header a{
+.volta-catalogo{
+    margin-top: 3vh;
+}
+.volta-catalogo a{
     text-decoration: none;
     font-size: 18px;
     color: black;
