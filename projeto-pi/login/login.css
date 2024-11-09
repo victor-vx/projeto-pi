@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(https://www.inovcorp.com.br/wp-content/uploads/2023/11/academia-com-equipamento-bicicleta-scaled.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav-login{
+    background-color: rgba(255, 255, 255, 0.548);
+    padding: 50px;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.nav-login form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.nav-login form input{
+    padding: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.726);
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 250px;
+}
+.nav-login form button{
+    padding: 15px;
+    border: none;
+    border-radius: 5vh;
+    color: white;
+    background-color: gray;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav-login form button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.nav-login ::placeholder{
+    font-weight: bold;
+    color: white;
+}
