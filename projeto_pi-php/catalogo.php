@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// Produtos disponíveis no catálogo
 $produtos = [
     ["id" => 1, "nome" => "Creatina Max 300g", "preco" => 73.00, "imagem" => "https://cdn.awsli.com.br/600x450/968/968066/produto/36982274/creatina-max-titanium-300g-wokp9u5c7m.png"],
     ["id" => 2, "nome" => "Whey Protein Max s:Chocolate 1kg", "preco" => 126.00, "imagem" => "https://www.jauserve.com.br/dw/image/v2/BFJL_PRD/on/demandware.static/-/Sites-jauserve-master/default/dw9fe43cef/7898944774254.png?sw=1800"],
