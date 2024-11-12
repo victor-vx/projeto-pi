@@ -1,12 +1,10 @@
 <?php
 session_start();
 
-// Produtos disponíveis no catálogo
 $produtos = [
     1 => ["nome" => "Creatina Max 300g", "preco" => 73.00],
-    2 => ["nome" => "Whey Protein Max s:Chocolate 1kg", "preco" => 126.00],
-    3 => ["nome" => "Pré Treino Growth", "preco" => 88.00],
-    4 => ["nome"=> "Pré Treino Insanity Growth", "preco"=> 95.00]
+    2 => ["nome" => "Whey Protein Max s:Chocolate 1kg", "preco" => 120.00],
+    3 => ["nome" => "Pré Treino Growth", "preco" => 88.00]
 ];
 ?>
 
@@ -15,12 +13,7 @@ $produtos = [
 <head>
     <meta charset="UTF-8">
     <title>Carrinho de Compras</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>

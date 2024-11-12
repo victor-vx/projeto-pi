@@ -32,9 +32,10 @@ header h1{
     color: black;
     font-weight: bold;
     padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-header a:hover{
+.volta-catalogo a:hover{
     background-color: black;
     color: white;
 }

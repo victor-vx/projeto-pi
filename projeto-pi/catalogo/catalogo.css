@@ -21,10 +21,10 @@ header {
     display: flex;
 }
 header a{
-    padding: 10px;
+    padding: 15px;
     text-decoration: none;
     color: white;
-    margin-left: 150vh;
+    margin-left: 145vh;
     font-size: 15px;
 }
 
@@ -52,13 +52,15 @@ header a{
     filter: drop-shadow(2px 2px 2px black);
 }
 
-.produto h2 {
+.catalogo .produto h2 {
     font-size: 1.2rem;
     margin-top: 2vh;
+    font-weight: 700;
 }
 
 .produto p {
     margin: 0.5rem 0;
+    font-weight: bold;
 }
 
 .produto button{

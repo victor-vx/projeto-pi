@@ -11,8 +11,7 @@
 <body>
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-          <h2>PowerUp</h2>
-          <a href="" class="navbar-link">Home</a>
+          <h2>PowerUp Suplementos</h2>
           <a href="sobre/sobre.html" class="navbar-link">Sobre-Nós</a>
           <a href="contato/contato.html" class="navbar-link">Contato</a>
           <a href="cadastro/cadastro.html" class="navbar-link">Cadastrar-se</a>
