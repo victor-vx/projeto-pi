@@ -24,7 +24,7 @@ header a{
     padding: 15px;
     text-decoration: none;
     color: white;
-    margin-left: 145vh;
+    margin-left: 140vh;
     font-size: 15px;
 }
 
@@ -37,7 +37,7 @@ header a{
 }
 
 .produto {
-    background-color: #ffffffb9;
+    background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
@@ -65,16 +65,16 @@ header a{
 
 .produto button{
     text-decoration: none;
-    color: black;
-    background-color:transparent;
+    color: white;
+    background-color: green;
     border: none;
-    padding: 5px;
+    padding: 10px;
     font-size: 15px;
     font-weight: bold;
     outline: none;
 }
 .produto button:hover{
-background-color: black;
+background-color: rgb(25, 191, 16);
 color: white;
 cursor: pointer;
 }
