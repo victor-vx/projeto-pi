@@ -5,16 +5,13 @@ body {
     background-position: center top;
 }
 
-.container-fluid {
-    padding: 5px;
-}
 
 .nav-bar {
     display: flex;
 }
 
 .nav-bar img {
-    width: 100px;
+    width: 80px;
 }
 
 .nav-bar h2 {
@@ -262,6 +259,11 @@ body {
 
 #beneficios {
     margin-bottom: 5vh;
+    margin-left: 2vh;
+}
+
+#beneficios img{
+    border-radius: 10px;
 }
 
 
