@@ -118,7 +118,7 @@ body {
     color: black;
 }
 
-.sobre-nav{
+.sobre-nav {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -128,26 +128,30 @@ body {
     background-color: rgb(182, 181, 181);
     height: 90vh;
 }
-.sobre-nav .linha{
+
+.sobre-nav .linha {
     border: 10px solid white;
     width: 200px;
     border-radius: 5vh;
 }
-.sobre-nav h1{
+
+.sobre-nav h1 {
     color: black;
     font-weight: bold;
     margin-top: 10vh;
 }
-.sobre-nav img{
+
+.sobre-nav img {
     width: 400px;
 }
 
-.sobre-nav p{
+.sobre-nav p {
     font-size: 25px;
     color: black;
     font-weight: bold;
 }
-.sobre-nav a{
+
+.sobre-nav a {
     width: 250px;
     padding: 15px;
     border-radius: 5px;
@@ -158,14 +162,14 @@ body {
     text-decoration: none;
 }
 
-.sobre-nav a:hover{
+.sobre-nav a:hover {
     cursor: pointer;
     background-color: white;
     color: black;
     border: 1px solid black;
 }
 
-.outros-servicos{
+.outros-servicos {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -176,44 +180,88 @@ body {
     padding: 50px;
 }
 
-.outros-servicos h1{
+.outros-servicos h1 {
     color: black;
     font-weight: bold;
 }
-.outros-servicos .linha{
+
+.outros-servicos .linha {
     border: 10px solid black;
     width: 200px;
     border-radius: 5vh;
 }
+
 .box-img {
     display: flex;
     gap: 30vh;
 }
-.box-img img{
+
+.box-img img {
     border-radius: 10px;
-    width: 400px;
+    width: 250px;
     object-fit: cover;
     margin: 30px;
 }
 
-
-.home-pontos {
-    background-color: rgb(255, 255, 255);
-    height: 200px;
+.container {
     display: flex;
-    gap: 10px;
-    margin-bottom: 10vh;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(156, 153, 153, 0.534);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-radius: 5px;
 }
 
-.banner-beneficios {
-    display: flex;
-    gap: 10px;
-    background-color: rgb(58, 57, 57);
-    width: 350px;
-    margin-left: 20vh;
-    height: 50px;
-    margin-top: 8vh;
+.card {
+    width: 500px;
+    height: 800px;
     border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+}
+
+.card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.card .overlay h2 {
+    font-weight: 300;
+}
+
+
+.card .overlay h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#beneficios {
+    margin-bottom: 5vh;
 }
 
 
@@ -226,6 +274,7 @@ footer p {
     font-size: 18px;
     font-weight: bold;
 }
-footer p i{
-   margin: 0 10px;
+
+footer p i {
+    margin: 0 10px;
 }
