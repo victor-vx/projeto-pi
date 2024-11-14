@@ -16,7 +16,14 @@
 
             carrinho.forEach(produto => {
                 const item = document.createElement("li");
-                item.innerText = `${produto.nome} - R$ ${produto.preco.toFixed(2)}`;
+                item.classList.add("item-carrinho");
+
+                item.innerHTML = `
+                    <img src="${produto.imagem}" alt="${produto.nome}" width="50">
+                    <span>${produto.nome}</span>
+                    <span>R$ ${produto.preco.toFixed(2)}</span>
+                `;
+
                 listaCarrinho.appendChild(item);
                 total += produto.preco;
             });
@@ -36,10 +43,10 @@
 <body>
     <div class="nav-carrinho">
         <header>
-           <img style="width: 100px;" src="https://cdn-icons-png.flaticon.com/512/5087/5087784.png">
-           <div class="volta-catalogo">
-            <a href="catalogo.html">Voltar ao Catálogo</a> 
-           </div>
+            <img style="width: 100px;" src="https://cdn-icons-png.flaticon.com/512/5087/5087784.png">
+            <div class="volta-catalogo">
+                <a href="catalogo.html">Voltar ao Catálogo</a> 
+            </div>
         </header>
     
         <main>
@@ -55,6 +62,5 @@
             window.location.href = "finalizar-compra.html";
         }
     </script>
-
 </body>
 </html>

@@ -6,13 +6,23 @@ body {
 }
 
 .container-fluid {
-    padding: 10px;
+    padding: 5px;
 }
 
-.container-fluid h2 {
-    font-size: 30px;
-    font-weight: 400;
+.nav-bar {
+    display: flex;
+}
+
+.nav-bar img {
+    width: 100px;
+}
+
+.nav-bar h2 {
+    font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    color: black;
 }
 
 .container-fluid .navbar-link {
@@ -88,37 +98,133 @@ body {
     filter: drop-shadow(10px 10px 10px black);
 }
 
-.base hr {
-    padding: 15px;
-    background-color: white;
-    border: none;
-}
 
 .base a {
     padding: 20px;
-    background-color: white;
+    background-color: black;
     border-radius: 5vh;
     border: none;
     border: none;
-    color: black;
+    color: white;
     font-size: 18px;
     font-weight: bold;
-    transition: padding 0.3s;
     text-decoration: none;
     text-align: center;
+    margin-top: 1vh;
 }
 
 .base a:hover {
-    background-color: black;
-    color: white;
-    padding: 25px;
+    background-color: white;
+    color: black;
 }
 
-footer div a{
+.sobre-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(182, 181, 181);
+    height: 90vh;
+}
+.sobre-nav .linha{
+    border: 10px solid white;
+    width: 200px;
+    border-radius: 5vh;
+}
+.sobre-nav h1{
+    color: black;
+    font-weight: bold;
+    margin-top: 10vh;
+}
+.sobre-nav img{
+    width: 400px;
+}
+
+.sobre-nav p{
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+.sobre-nav a{
+    width: 250px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.sobre-nav a:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.outros-servicos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 50px;
+}
+
+.outros-servicos h1{
+    color: black;
+    font-weight: bold;
+}
+.outros-servicos .linha{
+    border: 10px solid black;
+    width: 200px;
+    border-radius: 5vh;
+}
+.box-img {
+    display: flex;
+    gap: 30vh;
+}
+.box-img img{
+    border-radius: 10px;
+    width: 400px;
+    object-fit: cover;
+}
+
+
+.home-pontos {
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10vh;
+}
+
+.banner-beneficios {
+    display: flex;
+    gap: 10px;
+    background-color: rgb(58, 57, 57);
+    width: 350px;
+    margin-left: 20vh;
+    height: 50px;
+    margin-top: 8vh;
+    border-radius: 10px;
+}
+
+
+footer div a {
     font-size: 18px;
     font-weight: bold;
 }
-footer p{
+
+footer p {
     font-size: 18px;
     font-weight: bold;
+}
+footer p i{
+   margin: 0 10px;
 }

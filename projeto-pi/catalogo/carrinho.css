@@ -8,7 +8,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 25vh;
-    margin-top: 25vh;
+    margin-top: 10vh;
 }
 .nav-carrinho{
     background-color: rgb(255, 255, 255);
@@ -50,13 +50,17 @@ main ul{
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+ul #lista-carrinho{
+    margin: 7px;
+}
 
 main p{
     font-weight: bold;
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, 
     sans-serif;
-    margin-top: 1vh;
+    margin-top: 2vh;
+    
 }
 main button{
 border: none;
