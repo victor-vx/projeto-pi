@@ -11,13 +11,13 @@ body {
 }
 
 .nav-bar img {
-    width: 80px;
+    width: 100px;
 }
 
 .nav-bar h2 {
     font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-top: 1vh;
+    margin-top: 2vh;
     margin-left: 2vh;
     color: black;
 }
@@ -123,7 +123,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgb(182, 181, 181);
-    height: 90vh;
+    height: 100vh;
 }
 
 .sobre-nav .linha {
@@ -139,7 +139,7 @@ body {
 }
 
 .sobre-nav img {
-    width: 400px;
+    width: 500px;
 }
 
 .sobre-nav p {
@@ -207,7 +207,7 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: rgba(156, 153, 153, 0.534);
+    background-color: rgba(156, 153, 153, 0.336);
     margin-top: 5vh;
     margin-bottom: 5vh;
     border-radius: 5px;
@@ -259,7 +259,7 @@ body {
 
 #beneficios {
     margin-bottom: 5vh;
-    margin-left: 2vh;
+    margin-left: 5vh;
 }
 
 #beneficios img{
