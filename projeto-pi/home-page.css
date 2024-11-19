@@ -11,13 +11,17 @@ body {
 }
 
 .nav-bar img {
-    width: 100px;
+    width: 80px;
+}
+
+.carousel-item .d-block{
+    height: 650px;
 }
 
 .nav-bar h2 {
     font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-top: 2vh;
+    margin-top: 1.5vh;
     margin-left: 2vh;
     color: black;
 }
@@ -221,6 +225,10 @@ body {
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: none;
+    transition: width 0.5s;
+}
+.card:hover{
+    width: 600px;
 }
 
 .card img {
@@ -229,6 +237,7 @@ body {
     object-fit: cover;
     border: none;
 }
+
 
 .card .overlay {
     position: absolute;
