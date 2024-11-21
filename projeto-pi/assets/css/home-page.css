@@ -14,9 +14,6 @@ body {
     width: 80px;
 }
 
-.carousel-item .d-block{
-    height: 650px;
-}
 
 .nav-bar h2 {
     font-size: 50px;
@@ -202,6 +199,10 @@ body {
     width: 250px;
     object-fit: cover;
     margin: 30px;
+}
+
+.carousel-item .d-block{
+    height: 670px;
 }
 
 .container {
