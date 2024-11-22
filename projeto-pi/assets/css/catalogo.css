@@ -21,7 +21,7 @@ header h1 {
   font-style: italic;
   margin-left: 2vh;
   margin-top: 2vh;
-  color: black;
+  color: rgb(253, 253, 253);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: 400;
 }
@@ -83,7 +83,7 @@ header a {
 .produto button {
   text-decoration: none;
   color: white;
-  background-color: green;
+  background-color: darkred;
   border: none;
   padding: 10px;
   font-size: 15px;
@@ -92,7 +92,7 @@ header a {
 }
 
 .produto button:hover {
-  background-color: rgb(25, 191, 16);
+  background-color: rgb(185, 9, 9);
   color: white;
   cursor: pointer;
 }
