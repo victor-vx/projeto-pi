@@ -1,143 +1,103 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-image: url(https://www.embraplan.com.br/imagens/noticias/11b986fc-d5a6-49a8-ba84-7cbbe8b6f93e.jpg);
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #333;
-}
-
-.mensagem-carrinho {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    font-size: 16px;
-    z-index: 1000;
-    animation: fadeIn 0.5s ease, fadeOut 0.5s ease 2.5s;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    to {
-        opacity: 0;
-        transform: translateY(10px);
-    }
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #333;
 }
 
 header {
-    background-color: #ffffff;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
+  background-color: darkslategray;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  display: flex;
 }
 
 header h1 {
-    font-style: italic;
-    margin-left: 2vh;
-    margin-top: 2vh;
-    color: black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 400;
+  font-style: italic;
+  margin-left: 2vh;
+  margin-top: 2vh;
+  color: black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 400;
 }
 
 header a {
-    padding: 15px;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    margin-top: 2vh;
-    background-color: #4CAF50;
-    width: 300px;
-    margin-left: 81vh;
-
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin-top: 1vh;
+  background-color: darkred;
+  height: 50px;
+  width: 200px;
+  margin-left: 120vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
 }
 
 .img-header img {
-    width: 80px;
+  width: 80px;
 }
 
 .catalogo {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7vh;
-    margin-top: 5vh;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7vh;
+  margin-top: 5vh;
+  justify-content: center;
 }
 
 .produto {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    width: 200px;
-    text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
 }
 
 .produto img {
-    width: 70%;
-    height: auto;
-    border-radius: 5px;
-    filter: drop-shadow(2px 2px 2px black);
+  width: 70%;
+  height: auto;
+  border-radius: 5px;
+  filter: drop-shadow(2px 2px 2px black);
 }
 
 .catalogo .produto h2 {
-    font-size: 1.2rem;
-    margin-top: 2vh;
-    font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 2vh;
+  font-weight: 700;
 }
 
 .produto p {
-    margin: 0.5rem 0;
-    font-weight: bold;
+  margin: 0.5rem 0;
+  font-weight: bold;
 }
 
 .produto button {
-    text-decoration: none;
-    color: white;
-    background-color: green;
-    border: none;
-    padding: 10px;
-    font-size: 15px;
-    font-weight: bold;
-    outline: none;
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  outline: none;
 }
 
 .produto button:hover {
-    background-color: rgb(25, 191, 16);
-    color: white;
-    cursor: pointer;
+  background-color: rgb(25, 191, 16);
+  color: white;
+  cursor: pointer;
 }
 
 .preco {
-    color: #009900;
-    font-weight: bold;
+  color: #009900;
+  font-weight: bold;
 }
