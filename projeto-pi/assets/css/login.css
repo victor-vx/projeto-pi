@@ -3,13 +3,10 @@
     padding: 0;
 }
 body{
-    background-image: url(https://www.inovcorp.com.br/wp-content/uploads/2023/11/academia-com-equipamento-bicicleta-scaled.jpg);
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #0f2027;
 }
 .nav-login{
-    background-color: rgba(255, 255, 255, 0.548);
+    background-color: rgb(255, 255, 255);
     padding: 50px;
     border-radius: 15px;
     top: 50%;
