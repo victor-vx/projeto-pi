@@ -61,42 +61,35 @@ header a {
 .catalogo {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  gap: 1em;
+  padding: 1em;
 }
 
 .produto {
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 10px;
-  width: 200px;
+  padding: 1em;
   text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .produto img {
-  width: 70%;
-  height: auto;
-  border-radius: 5px;
-  filter: drop-shadow(2px 2px 2px black);
+  max-width: 50%;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em;
 }
 
-.catalogo .produto h2 {
-  font-size: 1.2rem;
-  margin-top: 2vh;
-  font-weight: 700;
-}
-
-.produto p {
-  margin: 0.5rem 0;
-  font-weight: bold;
+.produto h2 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
 }
 
 .produto button {
   background-color: #4caf50;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 20px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
