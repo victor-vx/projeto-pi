@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -25,7 +25,7 @@ header img {
 header a {
   color: white;
   text-decoration: none;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   padding: 8px 15px;
   border-radius: 5px;
   transition: background-color 0.3s;
@@ -34,7 +34,6 @@ header a {
 header a:hover {
   background-color: #45a049;
 }
-
 
 header a {
   position: relative;
@@ -54,7 +53,6 @@ header a {
   align-items: center;
   font-size: 12px;
 }
-
 
 .img-header img {
   width: 80px;
@@ -95,7 +93,7 @@ header a {
 }
 
 .produto button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -112,10 +110,8 @@ header a {
 }
 
 .preco {
-  color: #4CAF50;
+  color: #4caf50;
   font-weight: bold;
   font-size: 18px;
   margin: 10px 0;
 }
-
-
