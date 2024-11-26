@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .div-sobre {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    width: 100%;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  .div-sobre h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .missao-visao-valores h3 {
+    font-size: 1.8rem;
+    margin: 15px 0;
+    text-transform: uppercase;
+    border-bottom: 4px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+
+  .missao-visao-valores p,
+  .div-sobre ul li {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 10px 0;
+  }
+
+  .div-sobre ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .div-sobre ul li {
+    background: linear-gradient(90deg, #1e029b, #0a0879);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+
+  .btn-topo {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: linear-gradient(90deg, #1e029b, #0a0879);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn-topo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
