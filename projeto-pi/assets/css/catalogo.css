@@ -81,6 +81,7 @@ header a {
   max-width: 50%;
   border-bottom: 1px solid #ddd;
   margin-bottom: 1em;
+  height: 180px;
 }
 
 .produto h2 {
@@ -92,12 +93,13 @@ header a {
   background-color: #4caf50;
   color: white;
   border: none;
-  padding: 20px;
+  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s, transform 0.2s;
   font-weight: bold;
+  width: 250px;
 }
 
 .produto button:hover {
