@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/5073/5073650.png">
+    <link rel="shortcut icon" type="x-icon" href="../assets/imgs/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu Carrinho</title>
     <link rel="stylesheet" href="../assets/css/carrinho.css">
@@ -36,6 +36,17 @@
         }
 
         window.onload = exibirCarrinho;
+
+        function finalizarCompra() {
+    const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+    if (carrinho.length === 0) {
+        alert("O carrinho está vazio. Adicione itens antes de finalizar a compra.");
+        return;
+    }
+    window.location.href = "../pages/finalizar-compra.html";
+}
+
+
     </script>
 </head>
 

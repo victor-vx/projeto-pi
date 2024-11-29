@@ -13,11 +13,15 @@ body{
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 .nav-login form{
     display: flex;
     flex-direction: column;
     gap: 25px;
+
 }
 .nav-login form input{
     padding: 15px;
@@ -28,7 +32,17 @@ body{
     border: none;
     outline: none;
     width: 250px;
+    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s, transform 0.2s;
 }
+
+.nav-login form input:hover{
+    background-color: black;
+    cursor: pointer;
+    transform: scale(1.05);
+
+}
+
 .nav-login form button{
     padding: 15px;
     border: none;
@@ -37,14 +51,18 @@ body{
     background-color: gray;
     font-size: 15px;
     font-weight: bold;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-login form button:hover{
     background-color: black;
     color: white;
     cursor: pointer;
+    
 }
 .nav-login ::placeholder{
     font-weight: bold;
     color: white;
+    
+
 }

@@ -16,23 +16,26 @@ header {
   padding: 10px 20px;
   background-color: #333;
   color: white;
+  
 }
 
 header img {
   width: 50px;
+
 }
 
 header a {
   color: white;
   text-decoration: none;
-  background-color: #4caf50;
+  background-color: #067abd;
   padding: 8px 15px;
   border-radius: 5px;
   transition: background-color 0.3s;
+
 }
 
 header a:hover {
-  background-color: #45a049;
+  background-color: #067abd;
 }
 
 header a {
@@ -63,6 +66,7 @@ header a {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1em;
   padding: 1em;
+
 }
 
 .produto {
@@ -75,6 +79,7 @@ header a {
   flex-direction: column;
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 .produto img {
@@ -90,7 +95,7 @@ header a {
 }
 
 .produto button {
-  background-color: #4caf50;
+  background-color: #0a74d8;
   color: white;
   border: none;
   padding: 10px;
@@ -100,10 +105,11 @@ header a {
   transition: background-color 0.3s, transform 0.2s;
   font-weight: bold;
   width: 250px;
+
 }
 
 .produto button:hover {
-  background-color: #155f19;
+  background-color: #03608b;
   transform: scale(1.05);
 }
 
@@ -112,4 +118,5 @@ header a {
   font-weight: bold;
   font-size: 18px;
   margin: 10px 0;
+  
 }
